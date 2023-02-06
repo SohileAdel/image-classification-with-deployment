@@ -21,16 +21,16 @@ class_mapping = {0: 'Building',
                  4: 'Sea',
                  5: 'Street'}
 
-def model_predict(img_arr):
-    predictions = [0] * len(img_arr)
+def model_predict(images_arr):
+    predictions = [0] * len(images_arr)
 
     for i, val in enumerate(predictions):
-        model.set_tensor(input_details[0]['index'], img_arr[i].reshape((1, 150, 150, 3)))
+        model.set_tensor(input_details[0]['index'], images_arr[i].reshape((1, 150, 150, 3)))
         model.invoke()
         predictions[i] = model.get_tensor(output_details[0]['index']).reshape((6,))
     
-    prediction_prob = np.array(predictions)
-    argmaxs = np.argmax(prediction_prob, axis=1)
+    prediction_probabilities = np.array(predictions)
+    argmaxs = np.argmax(prediction_probabilities, axis=1)
 
     return argmaxs
 
@@ -73,7 +73,7 @@ async def create_upload_files(files: List[UploadFile] = File(...)):
     table_html = get_html_table(image_paths, class_predictions, column_labels)
 
     content = head_html + """
-    <marquee width="525" behavior="alternate"><h1 style="color:red;font-family:Arial">Here's Our Predictions!</h1></marquee>
+    <h1 style="color:black;font-family:Arial">Results</h1>
     """ + str(table_html) + '''<br><form method="post" action="/">
     <button type="submit">Home</button>
     </form>'''
@@ -82,19 +82,16 @@ async def create_upload_files(files: List[UploadFile] = File(...)):
 
 @app.post("/", response_class=HTMLResponse)
 @app.get("/", response_class=HTMLResponse)
-
-
-
 async def main():
     content = head_html + """
-    <marquee width="525" behavior="alternate"><h1 style="font-family:Arial">Please Upload Your Scenes!</h1></marquee>
-    <h3 style="font-family:Arial">We'll Try to Predict Which of These Categories They Are:</h3><br>
+    <h1 style="color:black;font-family:Arial">Please Upload Your Scenes</h1>
+    <h3 style="font-family:Arial">We'll Try to Recognize Which of These Categories They Are:</h3><br>
     """
-    
-    images = ['building.jpg', 'forest.jpg', 'glacier.jpg', 
+
+    original_paths = ['building.jpg', 'forest.jpg', 'glacier.jpg', 
                       'mountain.jpg', 'sea.jpg', 'street.jpg']
 
-    full_paths = ['static/images/' + x for x in images]
+    full_original_paths = ['static/images/' + x for x in original_paths]
 
     display_names = ['Building', 'Forest', 'Glacier', 'Mountain', 'Sea', 'Street']
 
@@ -108,17 +105,19 @@ async def main():
     <form  action="/uploadfiles/" enctype="multipart/form-data" method="post">
     <input name="files" type="file" multiple>
     <input type="submit">
-    </form> 
+    </form>
     </body>
     """
     
+    
     return content
+
 
 head_html = """
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
-<body>
+<body style="background-color:white;">
 <center>
 """
 
@@ -132,4 +131,4 @@ def get_html_table(image_paths, names, column_labels):
         s += '<td style="text-align:center">' + name + '</td></tr>'
     s += '</table>'
     
-    return 
+    return s
