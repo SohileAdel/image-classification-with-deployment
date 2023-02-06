@@ -1,0 +1,15 @@
+{
+	"builds":[
+		{
+			"src":"fastapi_.py",
+			"use":"@vercel/python"
+		}
+	],
+	"routes":[
+		{
+			"src":"/(.*)",
+			"dest":"fastapi_.py"
+		}
+
+	]
+}
