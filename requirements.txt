@@ -62,87 +62,18 @@ pywin32==303
 PyYAML==6.0
 pyzmq==22.3.0
 queuelib==1.5.0
-regex @ file:///C:/ci/regex_1658258307256/work
-requests @ file:///C:/ci/requests_1657735342357/work
-requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
-rope @ file:///opt/conda/conda-bld/rope_1643788605236/work
-Rtree @ file:///C:/ci/rtree_1618421015405/work
-ruamel-yaml-conda @ file:///C:/ci/ruamel_yaml_1616016898638/work
-s3transfer @ file:///C:/ci/s3transfer_1654512518418/work
-scikit-image @ file:///C:/ci/scikit-image_1648214340990/work
-scikit-learn @ file:///C:/ci/scikit-learn_1642617276183/work
 scikit-learn-intelex==2021.20221004.171935
 scipy==1.9.1
-Scrapy @ file:///C:/Windows/TEMP/abs_f50e21j997/croots/recipe/scrapy_1659598707153/work
-seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
-Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
-service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
 sip==4.19.13
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-smart-open @ file:///C:/ci/smart_open_1651235069716/work
-sniffio @ file:///C:/ci/sniffio_1614030527509/work
-snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1637937080595/work
-sortedcollections @ file:///tmp/build/80754af9/sortedcollections_1611172717284/work
-sortedcontainers @ file:///tmp/build/80754af9/sortedcontainers_1623949099177/work
-soupsieve @ file:///tmp/build/80754af9/soupsieve_1636706018808/work
-Sphinx @ file:///C:/ci/sphinx_1657617205740/work
-sphinxcontrib-applehelp @ file:///home/ktietz/src/ci/sphinxcontrib-applehelp_1611920841464/work
-sphinxcontrib-devhelp @ file:///home/ktietz/src/ci/sphinxcontrib-devhelp_1611920923094/work
-sphinxcontrib-htmlhelp @ file:///tmp/build/80754af9/sphinxcontrib-htmlhelp_1623945626792/work
-sphinxcontrib-jsmath @ file:///home/ktietz/src/ci/sphinxcontrib-jsmath_1611920942228/work
-sphinxcontrib-qthelp @ file:///home/ktietz/src/ci/sphinxcontrib-qthelp_1611921055322/work
-sphinxcontrib-serializinghtml @ file:///tmp/build/80754af9/sphinxcontrib-serializinghtml_1624451540180/work
-spyder @ file:///C:/Windows/TEMP/abs_66k5aq_mkw/croots/recipe/spyder_1659599805372/work
-spyder-kernels @ file:///C:/ci/spyder-kernels_1647011408404/work
-SQLAlchemy @ file:///C:/Windows/Temp/abs_f8661157-660b-49bb-a790-69ab9f3b8f7c8a8s2psb/croots/recipe/sqlalchemy_1657867864564/work
 starlette==0.16.0
 statsmodels==0.13.2
-sympy @ file:///C:/ci/sympy_1647853873858/work
 tables==3.6.1
-tabulate @ file:///C:/ci/tabulate_1657619055201/work
 TBB==0.2
-tblib @ file:///Users/ktietz/demo/mc3/conda-bld/tblib_1629402031467/work
-tenacity @ file:///C:/Windows/TEMP/abs_980d07a6-8e21-4174-9c17-7296219678ads7dhdov_/croots/recipe/tenacity_1657899108023/work
-terminado @ file:///C:/ci/terminado_1644322780199/work
-testpath @ file:///C:/Windows/TEMP/abs_23c7fa33-cbb9-46dc-b7c5-590c38e2de3d4bmbngal/croots/recipe/testpath_1655908553202/work
-text-unidecode @ file:///Users/ktietz/demo/mc3/conda-bld/text-unidecode_1629401354553/work
-textdistance @ file:///tmp/build/80754af9/textdistance_1612461398012/work
 tflite-runtime==2.5.0.post1
-threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
-three-merge @ file:///tmp/build/80754af9/three-merge_1607553261110/work
-tifffile @ file:///tmp/build/80754af9/tifffile_1627275862826/work
-tinycss @ file:///tmp/build/80754af9/tinycss_1617713798712/work
-tldextract @ file:///opt/conda/conda-bld/tldextract_1646638314385/work
-toml @ file:///tmp/build/80754af9/toml_1616166611790/work
-tomli @ file:///C:/Windows/TEMP/abs_ac109f85-a7b3-4b4d-bcfd-52622eceddf0hy332ojo/croots/recipe/tomli_1657175513137/work
-tomlkit @ file:///C:/Windows/TEMP/abs_3296qo9v6b/croots/recipe/tomlkit_1658946894808/work
-toolz @ file:///tmp/build/80754af9/toolz_1636545406491/work
-tornado @ file:///C:/ci/tornado_1606924294691/work
-tqdm @ file:///C:/b/abs_0axbz66qik/croots/recipe/tqdm_1664392691071/work
-traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
-Twisted @ file:///C:/Windows/Temp/abs_ccblv2rzfa/croots/recipe/twisted_1659592764512/work
-twisted-iocpsupport @ file:///C:/ci/twisted-iocpsupport_1646798932792/work
 typing_extensions==4.0.1
-ujson @ file:///C:/ci/ujson_1657525944442/work
-Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
-urllib3 @ file:///C:/Windows/TEMP/abs_65ynz4fdmi/croots/recipe/urllib3_1659110473919/work
 uvicorn==0.16.0
-w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
-watchdog @ file:///C:/ci/watchdog_1638367441841/work
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 webencodings==0.5.1
-websocket-client @ file:///C:/ci/websocket-client_1614804375980/work
-Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
-widgetsnbextension @ file:///C:/ci/widgetsnbextension_1644991377168/work
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306162074/work
 win-unicode-console==0.5
 wincertstore==0.2
-wrapt @ file:///C:/Windows/Temp/abs_7c3dd407-1390-477a-b542-fd15df6a24085_diwiza/croots/recipe/wrapt_1657814452175/work
-xarray @ file:///opt/conda/conda-bld/xarray_1639166117697/work
-xlrd @ file:///tmp/build/80754af9/xlrd_1608072521494/work
-XlsxWriter @ file:///opt/conda/conda-bld/xlsxwriter_1649073856329/work
-xlwings @ file:///C:/b/abs_41rmpiyy58/croots/recipe/xlwings_1664932818417/work
-yapf @ file:///tmp/build/80754af9/yapf_1615749224965/work
 zict==2.1.0
 zipp==3.6.0
-zope.interface @ file:///C:/ci/zope.interface_1625036252485/work
