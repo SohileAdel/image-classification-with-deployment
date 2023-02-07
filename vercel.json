@@ -1,15 +1,15 @@
 {
-  "devCommand": "uvicorn fastapi_:app --host 127.0.0.1 --port 8000",
+  "devCommand": "uvicorn index:app --host 127.0.0.1 --port 8000",
   "builds": [
     {
-      "src": "fastapi_.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "fastapi_.py"
+      "dest": "api/index.py"
     }
   ]
 }
