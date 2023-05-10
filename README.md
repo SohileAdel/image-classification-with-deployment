@@ -9,6 +9,7 @@ Dataset link: https://www.kaggle.com/datasets/puneet6060/intel-image-classificat
 
 ### Methods Used
 * Deep Learning
+* Transfer Learning
 * Data Visualization
 * Model Deployment
 
